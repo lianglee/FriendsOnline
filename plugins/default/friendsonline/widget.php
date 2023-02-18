@@ -27,12 +27,11 @@ if($users){
 	 <a class="" href="<?php echo ossn_site_url() . 'u/' . $user->username; ?>">
 			<img class="user-img" src="<?php echo $user->iconURL()->small;?>">
       </a>
-	</div>
 <?php
 	}
 	$all = ossn_site_url('friendsonline');
 	$vall = ossn_print('friendsonline:viewall');
-	echo "<a class='text-center' href='{$all}'>{$vall}</a>";
+	echo "<a class='d-block' href='{$all}'>{$vall}</a>";
 } else {
 	echo ossn_print('whoisonline:no');		
 }
