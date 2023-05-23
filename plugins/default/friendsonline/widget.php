@@ -33,6 +33,6 @@ if($users){
 	$vall = ossn_print('friendsonline:viewall');
 	echo "<a class='d-block' href='{$all}'>{$vall}</a>";
 } else {
-	echo ossn_print('whoisonline:no');		
+	echo ossn_print('friendsonline:no');	
 }
 echo "</div>";
