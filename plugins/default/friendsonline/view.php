@@ -27,7 +27,7 @@
 						'offset_name' => 'online_users_page',								
 			));
 		} else {
-			echo ossn_print('whoisonline:no');	
+			echo ossn_print('friendsonline:no');	
 		}
 	?>	
 </div>
