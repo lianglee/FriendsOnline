@@ -28,6 +28,15 @@ ossn_register_callback('ossn', 'init', function (): void {
 						$return[] = $widget;
 						return $return;
 				});
+				ossn_add_hook('newsfeed', "center:top",  function ($hook, $type, $return) {
+						$widget = ossn_plugin_view('widget/view', array(
+								'title'    => ossn_print('friendsonline'),
+								'class'    => 'friendsonline-widget',
+								'contents' => ossn_plugin_view('friendsonline/widget'),
+						));
+						$return[] = $widget;
+						return $return;
+				});
 		}
 });
 function friendsonline(array $params = array()): int | array | bool {
